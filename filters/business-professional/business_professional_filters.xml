@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Business Professional Package
+  Version: 1.0.0
+  Created: 2025-09-07
+  Last Modified: 2025-09-07
+  Author: Pralhad Nasane
+  Description: Gmail filters for business professionals, entrepreneurs, and corporate workers
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Business Professional Gmail Filters v1.0.0</title>
+  <updated>2025-09-07T00:00:00Z</updated>
+  <author><name>Business-Professional</name></author>
+
+  <!-- CLIENTS: Urgent client communications and VIP customer emails (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Clients - VIP</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(urgent OR priority OR "action required" OR deadline) OR from:(client OR customer)'/>
+    <apps:property name='label' value='Clients/VIP'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldStar' value='true'/>
+  </entry>
+
+  <!-- MEETINGS: Calendar invitations, video conferencing, and scheduling notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Meetings</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='zoom.us OR teams.microsoft.com OR meet.google.com OR calendly.com OR outlook.com'/>
+    <apps:property name='hasTheWord' value='subject:(meeting OR calendar OR invitation OR "has invited you" OR webinar OR conference)'/>
+    <apps:property name='label' value='Meetings'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- FINANCE: Business expenses, invoicing, and tax-related documents -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Invoices</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(invoice OR receipt OR expense OR reimbursement OR "tax document" OR statement)'/>
+    <apps:property name='label' value='Finance/Invoices'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- FINANCE: Business income, payments, and revenue notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Payments</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='paypal.com OR stripe.com OR square.com OR quickbooks.com'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR payout OR earnings OR "wire transfer")'/>
+    <apps:property name='label' value='Finance/Payments'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- PROJECTS: Project management tools and team collaboration platforms -->
+  <entry>
+    <category term='filter'/>
+    <title>Projects</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='asana.com OR trello.com OR monday.com OR notion.so OR slack.com OR teams.microsoft.com'/>
+    <apps:property name='hasTheWord' value='subject:(project OR task OR assignment OR deadline OR milestone)'/>
+    <apps:property name='label' value='Projects'/>
+  </entry>
+
+  <!-- LEGAL: Contracts, agreements, compliance, and legal documentation (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Legal</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(contract OR agreement OR NDA OR "terms of service" OR legal OR compliance OR audit)'/>
+    <apps:property name='label' value='Legal'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- MARKETING: Campaign management, analytics, and sales automation platforms -->
+  <entry>
+    <category term='filter'/>
+    <title>Marketing</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='mailchimp.com OR hubspot.com OR salesforce.com OR google-analytics.com'/>
+    <apps:property name='hasTheWord' value='subject:(campaign OR analytics OR leads OR conversion OR marketing)'/>
+    <apps:property name='label' value='Marketing'/>
+  </entry>
+
+  <!-- SECURITY: Business security alerts and authentication codes (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security alert" OR 2FA OR "login attempt" OR "password reset")'/>
+    <apps:property name='label' value='Security'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- VENDORS: Supplier communications, procurement, and vendor management -->
+  <entry>
+    <category term='filter'/>
+    <title>Vendors</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(vendor OR supplier OR procurement OR RFP OR quote OR proposal)'/>
+    <apps:property name='label' value='Vendors'/>
+  </entry>
+
+  <!-- NEWSLETTERS: Industry updates and professional publications (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='has:unsubscribe OR list:'/>
+    <apps:property name='label' value='Newsletters'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

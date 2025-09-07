@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Student Package
+  Version: 1.0.0
+  Created: 2025-09-07
+  Last Modified: 2025-09-07
+  Author: Pralhad Nasane
+  Description: Gmail filters for college and university students
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Student Gmail Filters v1.0.0</title>
+  <updated>2025-09-07T00:00:00Z</updated>
+  <author><name>Student</name></author>
+
+  <!-- SCHOOL: University administrative communications from .edu domains (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>School - Admin</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='from:(.edu) subject:(registration OR enrollment OR tuition OR grades OR transcript OR deadline OR important)'/>
+    <apps:property name='label' value='School/Admin'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- SCHOOL: Course management systems and assignment notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>School - Classes</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='canvas.com OR blackboard.com OR moodle.com OR zoom.us'/>
+    <apps:property name='hasTheWord' value='subject:(assignment OR homework OR quiz OR exam OR "due date" OR class OR lecture)'/>
+    <apps:property name='label' value='School/Classes'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- LEARNING: Online course platforms and educational resources -->
+  <entry>
+    <category term='filter'/>
+    <title>Learning - Courses</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='coursera.org OR edx.org OR udemy.com OR khanacademy.org OR skillshare.com OR codecademy.com'/>
+    <apps:property name='hasTheWord' value='subject:(course OR lesson OR certification OR progress OR completed)'/>
+    <apps:property name='label' value='Learning/Courses'/>
+  </entry>
+
+  <!-- LEARNING: Academic research databases and scholarly resources -->
+  <entry>
+    <category term='filter'/>
+    <title>Learning - Resources</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='scholar.google.com OR jstor.org OR researchgate.net OR academia.edu'/>
+    <apps:property name='hasTheWord' value='subject:(research OR paper OR journal OR study OR academic)'/>
+    <apps:property name='label' value='Learning/Resources'/>
+  </entry>
+
+  <!-- FINANCE: Financial aid, scholarships, and student account notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Student</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(scholarship OR "financial aid" OR loan OR grant OR tuition OR "student account" OR refund)'/>
+    <apps:property name='label' value='Finance/Student'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- JOBS: Internship and career opportunity notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Jobs - Applications</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='linkedin.com OR indeed.com OR glassdoor.com OR handshake.com'/>
+    <apps:property name='hasTheWord' value='subject:(internship OR job OR career OR interview OR application OR resume OR "thank you")'/>
+    <apps:property name='label' value='Jobs/Applications'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- SOCIAL: Campus activities, student organizations, and university events -->
+  <entry>
+    <category term='filter'/>
+    <title>Social - Campus</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(club OR organization OR event OR party OR "student life" OR campus OR greek)'/>
+    <apps:property name='label' value='Social/Campus'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: Student discounts and educational software subscriptions -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions - Student</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='spotify.com OR netflix.com OR adobe.com OR microsoft.com OR amazon.com'/>
+    <apps:property name='hasTheWord' value='subject:(student OR discount OR "free trial" OR subscription OR premium)'/>
+    <apps:property name='label' value='Subscriptions/Student'/>
+  </entry>
+
+  <!-- SECURITY: Two-factor authentication and account security alerts (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA OR "login code")'/>
+    <apps:property name='label' value='Security'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- NEWSLETTERS: General subscription newsletters and mailing lists (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='has:unsubscribe OR list:'/>
+    <apps:property name='label' value='Newsletters'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

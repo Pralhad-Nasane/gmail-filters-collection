@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - YouTuber & Developer Package
+  Version: 1.0.0
+  Created: 2025-09-07
+  Last Modified: 2025-09-07
+  Author: Pralhad Nasane
+  Description: Gmail filters for content creators and developers
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>YouTuber & Developer Gmail Filters v1.0.0</title>
+  <updated>2025-09-07T00:00:00Z</updated>
+  <author><name>YouTuber-Developer</name></author>
+
+  <!-- YOUTUBE: Creator Hub notifications for monetization and channel management (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>YouTube - Creator Hub</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='noreply@youtube.com'/>
+    <apps:property name='hasTheWord' value='subject:(Creator OR monetization OR analytics OR "Community Guidelines" OR copyright OR channel)'/>
+    <apps:property name='label' value='YouTube/Creator Hub'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- YOUTUBE: Community engagement notifications for comments and subscribers (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>YouTube - Community</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='noreply@youtube.com'/>
+    <apps:property name='hasTheWord' value='subject:(commented OR replied OR "liked your" OR subscribed OR "new subscriber")'/>
+    <apps:property name='label' value='YouTube/Community'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- DEVELOPMENT: Git repositories and version control platform notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Development - Git</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='github.com OR gitlab.com'/>
+    <apps:property name='label' value='Development/Git'/>
+  </entry>
+
+  <!-- DEVELOPMENT: Cloud hosting and deployment platform notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Development - Cloud</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='aws.amazon.com OR vercel.com OR netlify.com OR heroku.com OR digitalocean.com'/>
+    <apps:property name='label' value='Development/Cloud'/>
+  </entry>
+
+  <!-- NEWSLETTERS: Technology and development newsletters (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters - Tech</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='(has:unsubscribe OR list:) subject:(dev OR code OR programming OR AI OR tech OR software)'/>
+    <apps:property name='label' value='Newsletters/Tech'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- NEWSLETTERS: General non-technical newsletters and publications (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters - General</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='(has:unsubscribe OR list:) -(subject:(dev OR code OR programming OR AI OR tech OR software))'/>
+    <apps:property name='label' value='Newsletters/General'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- FINANCE: Business income from AdSense, payments, and monetization (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Income</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='google.com OR paypal.com OR stripe.com'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR earnings OR payout OR AdSense)'/>
+    <apps:property name='label' value='Finance/Income'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: Web hosting service notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions - Hostinger</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='hostinger.com'/>
+    <apps:property name='label' value='Subscriptions/Hostinger'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: AI music generation tool notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions - Suno AI</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='suno.ai OR suno.com'/>
+    <apps:property name='label' value='Subscriptions/Suno AI'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: Video editing and creative software notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions - Wondershare</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='wondershare.com'/>
+    <apps:property name='label' value='Subscriptions/Wondershare'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SECURITY: Two-factor authentication and verification codes (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security - 2FA</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA)'/>
+    <apps:property name='label' value='Security/2FA'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- BUSINESS: Collaboration and partnership opportunities (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Business - Collaborations</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(collaboration OR partnership OR sponsor OR "brand deal" OR influencer)'/>
+    <apps:property name='label' value='Business/Collaborations'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- CREATIVE: Design collaboration platform notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Creative - Figma</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='figma.com'/>
+    <apps:property name='label' value='Creative/Figma'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SOCIAL: Instagram platform notifications (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Social - Instagram</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='instagram.com'/>
+    <apps:property name='label' value='Social/Instagram'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- SOCIAL: LinkedIn professional networking notifications (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Social - LinkedIn</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='linkedin.com'/>
+    <apps:property name='label' value='Social/LinkedIn'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- PROMOTIONS: Marketing emails and promotional offers (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

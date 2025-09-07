@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Basic User Package
+  Version: 1.0.0
+  Created: 2025-09-07
+  Last Modified: 2025-09-07
+  Author: Pralhad Nasane
+  Description: Gmail filters for everyday email users who want a clean, organized inbox
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Basic User Gmail Filters v1.0.0</title>
+  <updated>2025-09-07T00:00:00Z</updated>
+  <author><name>Basic-User</name></author>
+
+  <!-- SOCIAL MEDIA: Facebook, Instagram, Twitter, LinkedIn, TikTok, Snapchat notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Social Media</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='facebook.com OR instagram.com OR twitter.com OR x.com OR linkedin.com OR tiktok.com OR snapchat.com'/>
+    <apps:property name='label' value='Social'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- NEWSLETTERS: All subscription newsletters and mailing lists -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='has:unsubscribe OR list:'/>
+    <apps:property name='label' value='Newsletters'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- SHOPPING: E-commerce orders and purchase confirmations -->
+  <entry>
+    <category term='filter'/>
+    <title>Shopping</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='amazon.com OR ebay.com OR walmart.com OR target.com OR bestbuy.com OR alibaba.com'/>
+    <apps:property name='hasTheWord' value='subject:(order OR shipped OR delivered OR tracking OR invoice OR receipt)'/>
+    <apps:property name='label' value='Shopping'/>
+  </entry>
+
+  <!-- FINANCE: Banking, payments, and financial transaction notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='paypal.com OR stripe.com OR venmo.com OR cashapp.com'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR statement OR bill OR invoice OR receipt)'/>
+    <apps:property name='label' value='Finance'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SECURITY: Two-factor authentication codes and security alerts (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA OR "login code")'/>
+    <apps:property name='label' value='Security'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: Streaming services and recurring subscription notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='netflix.com OR spotify.com OR youtube.com OR disney.com OR hulu.com OR prime.amazon.com'/>
+    <apps:property name='hasTheWord' value='subject:(subscription OR renewal OR "auto-renew" OR "plan expires")'/>
+    <apps:property name='label' value='Subscriptions'/>
+  </entry>
+
+  <!-- TRAVEL: Flight bookings, hotel reservations, and ride-sharing notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Travel</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='booking.com OR airbnb.com OR expedia.com OR uber.com OR lyft.com OR airlines.com'/>
+    <apps:property name='hasTheWord' value='subject:(booking OR reservation OR flight OR hotel OR "boarding pass" OR trip)'/>
+    <apps:property name='label' value='Travel'/>
+  </entry>
+
+  <!-- PROMOTIONS: Marketing emails and promotional offers (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-07T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>
