@@ -1,26 +1,5 @@
 <div align="center">
-
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%), 
-             radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
-             radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
-             radial-gradient(circle at 40% 40%, rgba(220, 53, 69, 0.05) 0%, transparent 50%);
-             background-size: 100% 100%, 200px 200px, 150px 150px, 300px 300px;
-             padding: 30px; border-radius: 4px; margin: 20px 0; 
-             box-shadow: 0 8px 32px rgba(0,0,0,0.1); width: 100%; max-width: 100%;
-             position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 10%; left: 10%; width: 40px; height: 40px; 
-              border: 2px solid rgba(108, 117, 125, 0.1); border-radius: 50%; 
-              transform: rotate(45deg);"></div>
-  <div style="position: absolute; top: 20%; right: 15%; width: 60px; height: 60px; 
-              border: 2px solid rgba(40, 167, 69, 0.1); border-radius: 10px; 
-              transform: rotate(30deg);"></div>
-  <div style="position: absolute; bottom: 15%; left: 15%; width: 50px; height: 50px; 
-              border: 2px solid rgba(255, 193, 7, 0.1); 
-              clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
-  <div style="position: absolute; bottom: 20%; right: 20%; width: 35px; height: 35px; 
-              background: rgba(220, 53, 69, 0.05); border-radius: 50%;"></div>
-  <img src="assets/logo_transparent.png" alt="Gmail Filters Collection Logo" width="200" style="position: relative; z-index: 10;" />
-</div>
+  <img src="assets/hero.svg" alt="Gmail Filters Collection banner">
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
