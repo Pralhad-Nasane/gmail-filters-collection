@@ -30,7 +30,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='canvas.com OR blackboard.com OR moodle.com OR zoom.us'/>
-    <apps:property name='hasTheWord' value='subject:(assignment OR homework OR quiz OR exam OR "due date" OR class OR lecture)'/>
+    <apps:property name='hasTheWord' value='subject:(assignment OR homework OR quiz OR exam OR &quot;due date&quot; OR class OR lecture)'/>
     <apps:property name='label' value='School/Classes'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -63,7 +63,7 @@
     <title>Finance - Student</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(scholarship OR "financial aid" OR loan OR grant OR tuition OR "student account" OR refund)'/>
+    <apps:property name='hasTheWord' value='subject:(scholarship OR &quot;financial aid&quot; OR loan OR grant OR tuition OR &quot;student account&quot; OR refund)'/>
     <apps:property name='label' value='Finance/Student'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
     <apps:property name='shouldNeverSpam' value='true'/>
@@ -76,7 +76,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='linkedin.com OR indeed.com OR glassdoor.com OR handshake.com'/>
-    <apps:property name='hasTheWord' value='subject:(internship OR job OR career OR interview OR application OR resume OR "thank you")'/>
+    <apps:property name='hasTheWord' value='subject:(internship OR job OR career OR interview OR application OR resume OR &quot;thank you&quot;)'/>
     <apps:property name='label' value='Jobs/Applications'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -87,7 +87,7 @@
     <title>Social - Campus</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(club OR organization OR event OR party OR "student life" OR campus OR greek)'/>
+    <apps:property name='hasTheWord' value='subject:(club OR organization OR event OR party OR &quot;student life&quot; OR campus OR greek)'/>
     <apps:property name='label' value='Social/Campus'/>
   </entry>
 
@@ -98,7 +98,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='spotify.com OR netflix.com OR adobe.com OR microsoft.com OR amazon.com'/>
-    <apps:property name='hasTheWord' value='subject:(student OR discount OR "free trial" OR subscription OR premium)'/>
+    <apps:property name='hasTheWord' value='subject:(student OR discount OR &quot;free trial&quot; OR subscription OR premium)'/>
     <apps:property name='label' value='Subscriptions/Student'/>
   </entry>
 
@@ -108,7 +108,7 @@
     <title>Security</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA OR "login code")'/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security code&quot; OR 2FA OR &quot;login code&quot;)'/>
     <apps:property name='label' value='Security'/>
     <apps:property name='shouldStar' value='true'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>

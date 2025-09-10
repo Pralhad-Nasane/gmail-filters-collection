@@ -63,7 +63,7 @@
     <title>Security</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA OR "login code")'/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security code&quot; OR 2FA OR &quot;login code&quot;)'/>
     <apps:property name='label' value='Security'/>
     <apps:property name='shouldStar' value='true'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
@@ -76,7 +76,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='netflix.com OR spotify.com OR youtube.com OR disney.com OR hulu.com OR prime.amazon.com'/>
-    <apps:property name='hasTheWord' value='subject:(subscription OR renewal OR "auto-renew" OR "plan expires")'/>
+    <apps:property name='hasTheWord' value='subject:(subscription OR renewal OR &quot;auto-renew&quot; OR &quot;plan expires&quot;)'/>
     <apps:property name='label' value='Subscriptions'/>
   </entry>
 
@@ -87,7 +87,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='booking.com OR airbnb.com OR expedia.com OR uber.com OR lyft.com OR airlines.com'/>
-    <apps:property name='hasTheWord' value='subject:(booking OR reservation OR flight OR hotel OR "boarding pass" OR trip)'/>
+    <apps:property name='hasTheWord' value='subject:(booking OR reservation OR flight OR hotel OR &quot;boarding pass&quot; OR trip)'/>
     <apps:property name='label' value='Travel'/>
   </entry>
 

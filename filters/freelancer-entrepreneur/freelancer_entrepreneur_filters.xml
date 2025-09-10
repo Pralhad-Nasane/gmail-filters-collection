@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Freelancer & Entrepreneur Package
+  Version: 1.0.0
+  Created: 2025-09-10
+  Last Modified: 2025-09-10
+  Author: Pralhad Nasane
+  Description: Gmail filters for freelancers, solopreneurs, and independent contractors
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Freelancer and Entrepreneur Gmail Filters v1.0.0</title>
+  <updated>2025-09-10T00:00:00Z</updated>
+  <author><name>Freelancer-Entrepreneur</name></author>
+
+  <!-- CLIENTS: New client inquiries and project proposals (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Clients - New Leads</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(project OR proposal OR quote OR &quot;hire you&quot; OR &quot;work with&quot; OR inquiry OR freelance OR contract)'/>
+    <apps:property name='label' value='Clients/New Leads'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldStar' value='true'/>
+  </entry>
+
+  <!-- CLIENTS: Existing client communications and project updates (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Clients - Active Projects</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(revision OR feedback OR &quot;next steps&quot; OR milestone OR delivery OR approval OR urgent)'/>
+    <apps:property name='label' value='Clients/Active Projects'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- FREELANCE PLATFORMS: Upwork, Fiverr, Freelancer.com job notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Freelance - Platforms</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='upwork.com OR fiverr.com OR freelancer.com OR guru.com OR toptal.com OR 99designs.com'/>
+    <apps:property name='hasTheWord' value='subject:(job OR gig OR &quot;new message&quot; OR proposal OR interview OR contract)'/>
+    <apps:property name='label' value='Freelance/Platforms'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- INVOICING: Invoice and payment management tools -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Invoicing</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='freshbooks.com OR wave.com OR invoice2go.com OR quickbooks.com OR xero.com'/>
+    <apps:property name='hasTheWord' value='subject:(invoice OR payment OR overdue OR reminder OR receipt)'/>
+    <apps:property name='label' value='Finance/Invoicing'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- PAYMENTS: Payment processor notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Payments</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='paypal.com OR stripe.com OR square.com OR wise.com OR payoneer.com'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR payout OR transfer OR deposit OR &quot;funds available&quot;)'/>
+    <apps:property name='label' value='Finance/Payments'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- BUSINESS TOOLS: Productivity and business management platforms -->
+  <entry>
+    <category term='filter'/>
+    <title>Tools - Business</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='notion.so OR airtable.com OR clickup.com OR monday.com OR asana.com OR todoist.com'/>
+    <apps:property name='hasTheWord' value='subject:(workspace OR project OR task OR reminder OR deadline)'/>
+    <apps:property name='label' value='Tools/Business'/>
+  </entry>
+
+  <!-- MARKETING: Email marketing and customer engagement platforms -->
+  <entry>
+    <category term='filter'/>
+    <title>Marketing - Campaigns</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='mailchimp.com OR convertkit.com OR constantcontact.com OR sendinblue.com OR getresponse.com'/>
+    <apps:property name='hasTheWord' value='subject:(campaign OR subscriber OR automation OR analytics OR open rate)'/>
+    <apps:property name='label' value='Marketing/Campaigns'/>
+  </entry>
+
+  <!-- NETWORKING: Professional networking and referral opportunities (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Networking - Referrals</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(referral OR &quot;recommend you&quot; OR networking OR &quot;introduce you&quot; OR collaboration OR partnership)'/>
+    <apps:property name='label' value='Networking/Referrals'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- LEARNING: Skill development and course platforms -->
+  <entry>
+    <category term='filter'/>
+    <title>Learning - Skills</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='udemy.com OR coursera.org OR skillshare.com OR linkedin.com OR masterclass.com'/>
+    <apps:property name='hasTheWord' value='subject:(course OR certification OR skill OR tutorial OR learning)'/>
+    <apps:property name='label' value='Learning/Skills'/>
+  </entry>
+
+  <!-- LEGAL: Contracts, NDAs, and business legal documents (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Legal - Contracts</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(contract OR NDA OR agreement OR &quot;terms of service&quot; OR legal OR compliance OR &quot;sign document&quot;)'/>
+    <apps:property name='label' value='Legal/Contracts'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- TAXES: Tax preparation and business expense tracking -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Taxes</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='turbotax.com OR hrblock.com OR taxact.com OR irs.gov'/>
+    <apps:property name='hasTheWord' value='subject:(tax OR &quot;1099&quot; OR deduction OR expense OR &quot;tax return&quot; OR &quot;tax document&quot;)'/>
+    <apps:property name='label' value='Finance/Taxes'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SECURITY: Business security and authentication (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security alert&quot; OR 2FA OR &quot;login attempt&quot; OR &quot;password reset&quot;)'/>
+    <apps:property name='label' value='Security'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- NEWSLETTERS: Business and entrepreneurship newsletters (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters - Business</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='(has:unsubscribe OR list:) subject:(business OR entrepreneur OR freelance OR startup OR marketing OR productivity)'/>
+    <apps:property name='label' value='Newsletters/Business'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+
+  <!-- PROMOTIONS: Business tool promotions and offers (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions OR subject:(sale OR discount OR offer OR &quot;limited time&quot; OR promo)'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

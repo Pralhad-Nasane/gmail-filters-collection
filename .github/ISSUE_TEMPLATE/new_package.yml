@@ -1,0 +1,75 @@
+name: 💡 New Filter Package
+description: Suggest a new filter package for a specific audience
+labels: ["enhancement", "new-package"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new filter package! 💡
+        Help us understand what audience needs better Gmail organization.
+        
+  - type: input
+    id: package-name
+    attributes:
+      label: Package Name
+      description: What should this package be called?
+      placeholder: e.g., "teacher-educator", "gamer-streamer", "small-business-owner"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: target-audience
+    attributes:
+      label: Target Audience
+      description: Who would use this package?
+      placeholder: e.g., "High school and college teachers managing student communications, parent emails, and educational platform notifications"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: email-types
+    attributes:
+      label: Email Types to Organize
+      description: List the types of emails/services this package should handle
+      placeholder: |
+        - Learning management systems (Canvas, Blackboard, Google Classroom)
+        - Parent-teacher communication platforms
+        - Educational newsletter subscriptions
+        - School district announcements
+        - Professional development workshops
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: estimated-filters
+    attributes:
+      label: Estimated Number of Filters
+      description: How many filters do you think this package needs?
+      options:
+        - "5-10 filters (simple package)"
+        - "10-15 filters (medium package)"
+        - "15-20 filters (comprehensive package)"
+        - "20+ filters (very comprehensive)"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: specific-services
+    attributes:
+      label: Specific Services/Platforms
+      description: List specific websites, apps, or services that should be included
+      placeholder: |
+        - zoom.us (online meetings)
+        - remind.com (parent communication)
+        - scholastic.com (book orders)
+        - etc.
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would help create this package
+    validations:
+      required: false

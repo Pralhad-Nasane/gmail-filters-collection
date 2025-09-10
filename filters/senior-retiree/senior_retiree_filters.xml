@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Senior & Retiree Package
+  Version: 1.0.0
+  Created: 2025-09-10
+  Last Modified: 2025-09-10
+  Author: Pralhad Nasane
+  Description: Gmail filters for seniors and retirees managing retirement, healthcare, and leisure activities
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Senior and Retiree Gmail Filters v1.0.0</title>
+  <updated>2025-09-10T00:00:00Z</updated>
+  <author><name>Senior-Retiree</name></author>
+
+  <!-- HEALTHCARE: Medicare, insurance, and medical appointments (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Healthcare - Medicare</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(Medicare OR &quot;health insurance&quot; OR &quot;supplemental insurance&quot; OR &quot;prescription drug&quot; OR &quot;Part A&quot; OR &quot;Part B&quot; OR &quot;Part D&quot;)'/>
+    <apps:property name='label' value='Healthcare/Medicare'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- HEALTHCARE: Doctor appointments and medical records (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Healthcare - Medical</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(appointment OR &quot;medical record&quot; OR prescription OR &quot;lab results&quot; OR checkup OR specialist OR &quot;test results&quot; OR &quot;doctor visit&quot;)'/>
+    <apps:property name='label' value='Healthcare/Medical'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- FINANCE: Social Security, pensions, and retirement accounts (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Retirement</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(&quot;Social Security&quot; OR pension OR 401k OR IRA OR &quot;retirement account&quot; OR &quot;retirement benefits&quot; OR &quot;Medicare premium&quot;)'/>
+    <apps:property name='label' value='Finance/Retirement'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- FINANCE: Banking and investment account notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Banking</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='bank.com OR fidelity.com OR vanguard.com OR schwab.com OR merrilledge.com'/>
+    <apps:property name='hasTheWord' value='subject:(statement OR balance OR dividend OR &quot;account alert&quot; OR transaction OR withdrawal)'/>
+    <apps:property name='label' value='Finance/Banking'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- GOVERNMENT: Government agencies and official communications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Government - Official</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='.gov OR ssa.gov OR medicare.gov OR irs.gov'/>
+    <apps:property name='hasTheWord' value='subject:(benefit OR &quot;official notice&quot; OR &quot;government benefit&quot; OR &quot;tax notice&quot; OR &quot;Medicare update&quot;)'/>
+    <apps:property name='label' value='Government/Official'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- FAMILY: Communications from children and grandchildren (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Family - Children</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(grandchildren OR grandkids OR &quot;family photo&quot; OR &quot;family update&quot; OR birthday OR anniversary OR graduation OR &quot;family reunion&quot;)'/>
+    <apps:property name='label' value='Family/Children'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- HOBBIES: Gardening, crafts, and hobby-related communications -->
+  <entry>
+    <category term='filter'/>
+    <title>Hobbies - Interests</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(gardening OR crafts OR quilting OR woodworking OR cooking OR baking OR reading OR &quot;book club&quot; OR photography)'/>
+    <apps:property name='label' value='Hobbies/Interests'/>
+  </entry>
+
+  <!-- TRAVEL: Senior travel and vacation planning -->
+  <entry>
+    <category term='filter'/>
+    <title>Travel - Senior</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='aarp.org OR seniortravel.com OR roadscholar.org OR grandparents.com'/>
+    <apps:property name='hasTheWord' value='subject:(travel OR cruise OR &quot;senior discount&quot; OR vacation OR &quot;group travel&quot; OR tour)'/>
+    <apps:property name='label' value='Travel/Senior'/>
+  </entry>
+
+  <!-- COMMUNITY: Senior centers, volunteer work, and community activities -->
+  <entry>
+    <category term='filter'/>
+    <title>Community - Senior</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(&quot;senior center&quot; OR volunteer OR &quot;community service&quot; OR &quot;senior activities&quot; OR &quot;senior group&quot; OR club OR organization)'/>
+    <apps:property name='label' value='Community/Senior'/>
+  </entry>
+
+  <!-- SUBSCRIPTIONS: Magazine subscriptions and publications -->
+  <entry>
+    <category term='filter'/>
+    <title>Subscriptions - Magazines</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='aarp.org OR readersdigest.com OR magazine.com OR smithsonianmag.com'/>
+    <apps:property name='hasTheWord' value='subject:(magazine OR publication OR subscription OR &quot;digital edition&quot; OR newsletter)'/>
+    <apps:property name='label' value='Subscriptions/Magazines'/>
+  </entry>
+
+  <!-- TECHNOLOGY: Tech support and device assistance -->
+  <entry>
+    <category term='filter'/>
+    <title>Technology - Support</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='apple.com OR microsoft.com OR google.com OR geeksquad.com'/>
+    <apps:property name='hasTheWord' value='subject:(&quot;tech support&quot; OR update OR &quot;device help&quot; OR &quot;account help&quot; OR tutorial OR &quot;how to&quot;)'/>
+    <apps:property name='label' value='Technology/Support'/>
+  </entry>
+
+  <!-- UTILITIES: Home utilities and service providers -->
+  <entry>
+    <category term='filter'/>
+    <title>Utilities - Home</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(electric OR gas OR water OR &quot;cable TV&quot; OR internet OR &quot;home phone&quot; OR utility OR bill OR service)'/>
+    <apps:property name='label' value='Utilities/Home'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SECURITY: Account security and fraud alerts (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security - Alerts</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(fraud OR &quot;security alert&quot; OR &quot;suspicious activity&quot; OR &quot;account locked&quot; OR &quot;verification code&quot; OR &quot;password reset&quot; OR OTP OR 2FA)'/>
+    <apps:property name='label' value='Security/Alerts'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PHARMACY: Prescription reminders and pharmacy communications -->
+  <entry>
+    <category term='filter'/>
+    <title>Healthcare - Pharmacy</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='cvs.com OR walgreens.com OR riteaid.com OR pharmacy.com'/>
+    <apps:property name='hasTheWord' value='subject:(prescription OR &quot;refill reminder&quot; OR &quot;ready for pickup&quot; OR medication OR pharmacy)'/>
+    <apps:property name='label' value='Healthcare/Pharmacy'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PROMOTIONS: Senior discounts and special offers (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions OR subject:(&quot;senior discount&quot; OR sale OR offer OR &quot;special deal&quot; OR coupon OR savings)'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

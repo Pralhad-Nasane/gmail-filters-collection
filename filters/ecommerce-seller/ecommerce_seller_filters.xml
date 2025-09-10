@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - E-commerce & Online Seller Package
+  Version: 1.0.0
+  Created: 2025-09-10
+  Last Modified: 2025-09-10
+  Author: Pralhad Nasane
+  Description: Gmail filters for e-commerce business owners and online sellers
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>E-commerce and Online Seller Gmail Filters v1.0.0</title>
+  <updated>2025-09-10T00:00:00Z</updated>
+  <author><name>Ecommerce-Seller</name></author>
+
+  <!-- CUSTOMERS: Customer inquiries, complaints, and support requests (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Customers - Support</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(order OR refund OR return OR exchange OR complaint OR help OR support OR question OR problem OR defective)'/>
+    <apps:property name='label' value='Customers/Support'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- CUSTOMERS: Product reviews and feedback -->
+  <entry>
+    <category term='filter'/>
+    <title>Customers - Reviews</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(review OR feedback OR rating OR testimonial OR &quot;left a review&quot; OR &quot;5 stars&quot; OR &quot;product feedback&quot;)'/>
+    <apps:property name='label' value='Customers/Reviews'/>
+  </entry>
+
+  <!-- PLATFORMS: Amazon seller notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Platforms - Amazon</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='sellercentral.amazon.com OR amazon.com'/>
+    <apps:property name='hasTheWord' value='subject:(seller OR FBA OR inventory OR &quot;listing suppressed&quot; OR &quot;account health&quot; OR &quot;policy violation&quot; OR payment OR settlement)'/>
+    <apps:property name='label' value='Platforms/Amazon'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PLATFORMS: eBay seller notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Platforms - eBay</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='ebay.com OR paypal.com'/>
+    <apps:property name='hasTheWord' value='subject:(seller OR listing OR bid OR &quot;best offer&quot; OR &quot;second chance&quot; OR payment OR dispute OR &quot;selling manager&quot;)'/>
+    <apps:property name='label' value='Platforms/eBay'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PLATFORMS: Etsy shop notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Platforms - Etsy</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='etsy.com'/>
+    <apps:property name='hasTheWord' value='subject:(shop OR order OR &quot;new message&quot; OR convo OR favorite OR listing OR handmade OR seller)'/>
+    <apps:property name='label' value='Platforms/Etsy'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PLATFORMS: Shopify store notifications -->
+  <entry>
+    <category term='filter'/>
+    <title>Platforms - Shopify</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='shopify.com'/>
+    <apps:property name='hasTheWord' value='subject:(store OR order OR payment OR abandoned OR cart OR checkout OR app OR theme OR subscription)'/>
+    <apps:property name='label' value='Platforms/Shopify'/>
+  </entry>
+
+  <!-- INVENTORY: Supplier and wholesale communications -->
+  <entry>
+    <category term='filter'/>
+    <title>Inventory - Suppliers</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(supplier OR wholesale OR inventory OR &quot;purchase order&quot; OR &quot;stock level&quot; OR &quot;out of stock&quot; OR reorder OR dropship)'/>
+    <apps:property name='label' value='Inventory/Suppliers'/>
+  </entry>
+
+  <!-- SHIPPING: Carrier notifications and tracking updates -->
+  <entry>
+    <category term='filter'/>
+    <title>Shipping - Carriers</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='ups.com OR fedex.com OR usps.com OR dhl.com OR shipstation.com'/>
+    <apps:property name='hasTheWord' value='subject:(shipped OR delivered OR tracking OR label OR pickup OR &quot;delivery exception&quot; OR &quot;delivery attempt&quot;)'/>
+    <apps:property name='label' value='Shipping/Carriers'/>
+  </entry>
+
+  <!-- PAYMENTS: Payment processor notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Payments - Processors</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='paypal.com OR stripe.com OR square.com OR authorize.net'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR payout OR settlement OR chargeback OR dispute OR refund OR &quot;payment failed&quot;)'/>
+    <apps:property name='label' value='Payments/Processors'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- MARKETING: Email marketing campaigns and automation -->
+  <entry>
+    <category term='filter'/>
+    <title>Marketing - Campaigns</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='mailchimp.com OR klaviyo.com OR constantcontact.com OR omnisend.com'/>
+    <apps:property name='hasTheWord' value='subject:(campaign OR automation OR &quot;email marketing&quot; OR subscribers OR &quot;open rate&quot; OR &quot;click rate&quot; OR segment)'/>
+    <apps:property name='label' value='Marketing/Campaigns'/>
+  </entry>
+
+  <!-- ANALYTICS: Business analytics and reporting tools -->
+  <entry>
+    <category term='filter'/>
+    <title>Analytics - Reports</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='google-analytics.com OR hotjar.com OR klaviyo.com OR shopify.com'/>
+    <apps:property name='hasTheWord' value='subject:(analytics OR report OR &quot;weekly summary&quot; OR &quot;monthly report&quot; OR traffic OR conversion OR sales OR performance)'/>
+    <apps:property name='label' value='Analytics/Reports'/>
+  </entry>
+
+  <!-- ADVERTISING: Ad platform notifications and spend alerts -->
+  <entry>
+    <category term='filter'/>
+    <title>Advertising - Platforms</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='facebook.com OR google.com OR amazon.com'/>
+    <apps:property name='hasTheWord' value='subject:(ad OR ads OR campaign OR &quot;ad account&quot; OR budget OR &quot;spending limit&quot; OR CPC OR ROAS OR &quot;ad performance&quot;)'/>
+    <apps:property name='label' value='Advertising/Platforms'/>
+  </entry>
+
+  <!-- FINANCE: Business banking and accounting -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Business</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='quickbooks.com OR xero.com OR wave.com OR freshbooks.com'/>
+    <apps:property name='hasTheWord' value='subject:(invoice OR expense OR &quot;profit loss&quot; OR &quot;tax document&quot; OR reconciliation OR bookkeeping OR accounting)'/>
+    <apps:property name='label' value='Finance/Business'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- SECURITY: Account security and fraud prevention (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security - Business</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(fraud OR &quot;security alert&quot; OR &quot;suspicious activity&quot; OR &quot;account violation&quot; OR &quot;policy warning&quot; OR OTP OR 2FA OR &quot;login attempt&quot;)'/>
+    <apps:property name='label' value='Security/Business'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PROMOTIONS: Marketing emails from business tools (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions OR subject:(discount OR sale OR offer OR &quot;limited time&quot; OR promo OR &quot;business deal&quot;)'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

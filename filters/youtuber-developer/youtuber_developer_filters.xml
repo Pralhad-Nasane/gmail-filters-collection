@@ -8,7 +8,7 @@
   Description: Gmail filters for content creators and developers
 -->
 <feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
-  <title>YouTuber & Developer Gmail Filters v1.0.0</title>
+  <title>YouTuber and Developer Gmail Filters v1.0.0</title>
   <updated>2025-09-07T00:00:00Z</updated>
   <author><name>YouTuber-Developer</name></author>
 
@@ -19,7 +19,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='noreply@youtube.com'/>
-    <apps:property name='hasTheWord' value='subject:(Creator OR monetization OR analytics OR "Community Guidelines" OR copyright OR channel)'/>
+    <apps:property name='hasTheWord' value='subject:(Creator OR monetization OR analytics OR &quot;Community Guidelines&quot; OR copyright OR channel)'/>
     <apps:property name='label' value='YouTube/Creator Hub'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -31,7 +31,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='noreply@youtube.com'/>
-    <apps:property name='hasTheWord' value='subject:(commented OR replied OR "liked your" OR subscribed OR "new subscriber")'/>
+    <apps:property name='hasTheWord' value='subject:(commented OR replied OR &quot;liked your&quot; OR subscribed OR &quot;new subscriber&quot;)'/>
     <apps:property name='label' value='YouTube/Community'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -130,7 +130,7 @@
     <title>Security - 2FA</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security code" OR 2FA)'/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security code&quot; OR 2FA)'/>
     <apps:property name='label' value='Security/2FA'/>
     <apps:property name='shouldStar' value='true'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
@@ -142,7 +142,7 @@
     <title>Business - Collaborations</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(collaboration OR partnership OR sponsor OR "brand deal" OR influencer)'/>
+    <apps:property name='hasTheWord' value='subject:(collaboration OR partnership OR sponsor OR &quot;brand deal&quot; OR influencer)'/>
     <apps:property name='label' value='Business/Collaborations'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>

@@ -18,7 +18,7 @@
     <title>Clients - VIP</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(urgent OR priority OR "action required" OR deadline) OR from:(client OR customer)'/>
+    <apps:property name='hasTheWord' value='subject:(urgent OR priority OR &quot;action required&quot; OR deadline) OR from:(client OR customer)'/>
     <apps:property name='label' value='Clients/VIP'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
     <apps:property name='shouldStar' value='true'/>
@@ -31,7 +31,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='zoom.us OR teams.microsoft.com OR meet.google.com OR calendly.com OR outlook.com'/>
-    <apps:property name='hasTheWord' value='subject:(meeting OR calendar OR invitation OR "has invited you" OR webinar OR conference)'/>
+    <apps:property name='hasTheWord' value='subject:(meeting OR calendar OR invitation OR &quot;has invited you&quot; OR webinar OR conference)'/>
     <apps:property name='label' value='Meetings'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -42,7 +42,7 @@
     <title>Finance - Invoices</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(invoice OR receipt OR expense OR reimbursement OR "tax document" OR statement)'/>
+    <apps:property name='hasTheWord' value='subject:(invoice OR receipt OR expense OR reimbursement OR &quot;tax document&quot; OR statement)'/>
     <apps:property name='label' value='Finance/Invoices'/>
     <apps:property name='shouldNeverSpam' value='true'/>
   </entry>
@@ -54,7 +54,7 @@
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
     <apps:property name='from' value='paypal.com OR stripe.com OR square.com OR quickbooks.com'/>
-    <apps:property name='hasTheWord' value='subject:(payment OR payout OR earnings OR "wire transfer")'/>
+    <apps:property name='hasTheWord' value='subject:(payment OR payout OR earnings OR &quot;wire transfer&quot;)'/>
     <apps:property name='label' value='Finance/Payments'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
     <apps:property name='shouldNeverSpam' value='true'/>
@@ -77,7 +77,7 @@
     <title>Legal</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(contract OR agreement OR NDA OR "terms of service" OR legal OR compliance OR audit)'/>
+    <apps:property name='hasTheWord' value='subject:(contract OR agreement OR NDA OR &quot;terms of service&quot; OR legal OR compliance OR audit)'/>
     <apps:property name='label' value='Legal'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>
   </entry>
@@ -99,7 +99,7 @@
     <title>Security</title>
     <updated>2025-09-07T00:00:00Z</updated>
     <content/>
-    <apps:property name='hasTheWord' value='subject:(OTP OR "verification code" OR "security alert" OR 2FA OR "login attempt" OR "password reset")'/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security alert&quot; OR 2FA OR &quot;login attempt&quot; OR &quot;password reset&quot;)'/>
     <apps:property name='label' value='Security'/>
     <apps:property name='shouldStar' value='true'/>
     <apps:property name='shouldAlwaysMarkImportant' value='true'/>

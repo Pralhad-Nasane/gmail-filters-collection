@@ -1,0 +1,70 @@
+name: 🔧 Filter Improvement
+description: Suggest improvements to existing filter packages
+labels: ["enhancement", "improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our filter packages! 🔧
+        
+  - type: dropdown
+    id: filter-package
+    attributes:
+      label: Which package needs improvement?
+      options:
+        - basic-user
+        - business-professional
+        - student
+        - youtuber-developer
+        - freelancer-entrepreneur
+        - parent-family
+        - senior-retiree
+        - ecommerce-seller
+        - Multiple packages
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current-issue
+    attributes:
+      label: What's missing or needs fixing?
+      description: Describe the current problem or gap
+      placeholder: |
+        e.g., "The student package is missing filters for:
+        - Scholarship websites
+        - Online textbook platforms
+        - Student loan communications"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: suggested-changes
+    attributes:
+      label: Suggested Changes
+      description: What specific changes would you like to see?
+      placeholder: |
+        - Add filter for scholarships.com
+        - Include Pearson MyLab notifications
+        - Better organization of financial aid emails
+    validations:
+      required: true
+      
+  - type: textarea
+    id: specific-services
+    attributes:
+      label: Specific Services to Add
+      description: List specific websites, email addresses, or keywords
+      placeholder: |
+        - scholarships.com
+        - FROM: noreply@pearson.com
+        - SUBJECT: financial aid
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+    validations:
+      required: false

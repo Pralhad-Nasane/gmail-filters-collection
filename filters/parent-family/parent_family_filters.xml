@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  Gmail Filters Collection - Parent & Family Package
+  Version: 1.0.0
+  Created: 2025-09-10
+  Last Modified: 2025-09-10
+  Author: Pralhad Nasane
+  Description: Gmail filters for parents managing family communications and activities
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Parent and Family Gmail Filters v1.0.0</title>
+  <updated>2025-09-10T00:00:00Z</updated>
+  <author><name>Parent-Family</name></author>
+
+  <!-- SCHOOL: Children's school communications and parent notifications (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>School - Children</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='school.edu OR .k12. OR schooldistrict'/>
+    <apps:property name='hasTheWord' value='subject:(parent OR conference OR &quot;report card&quot; OR grades OR attendance OR homework OR assignment OR &quot;school closure&quot; OR &quot;early dismissal&quot;)'/>
+    <apps:property name='label' value='School/Children'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- MEDICAL: Pediatrician, dentist, and family health appointments (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Medical - Family</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(appointment OR checkup OR vaccination OR &quot;medical record&quot; OR prescription OR pediatrician OR dentist OR &quot;health reminder&quot;)'/>
+    <apps:property name='label' value='Medical/Family'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ACTIVITIES: Sports teams, music lessons, extracurricular activities -->
+  <entry>
+    <category term='filter'/>
+    <title>Activities - Kids</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(practice OR game OR recital OR lesson OR tournament OR &quot;team photo&quot; OR uniform OR equipment OR performance)'/>
+    <apps:property name='label' value='Activities/Kids'/>
+  </entry>
+
+  <!-- CHILDCARE: Daycare, babysitters, and childcare providers (important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Childcare</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(daycare OR babysitter OR nanny OR &quot;child care&quot; OR preschool OR &quot;pick up&quot; OR &quot;drop off&quot;)'/>
+    <apps:property name='label' value='Childcare'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- SHOPPING: Family shopping, groceries, and household supplies -->
+  <entry>
+    <category term='filter'/>
+    <title>Shopping - Family</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='target.com OR walmart.com OR amazon.com OR costco.com OR kroger.com OR instacart.com'/>
+    <apps:property name='hasTheWord' value='subject:(order OR delivery OR grocery OR &quot;shopping list&quot; OR household OR kids OR family)'/>
+    <apps:property name='label' value='Shopping/Family'/>
+  </entry>
+
+  <!-- ENTERTAINMENT: Family streaming services and kids' entertainment -->
+  <entry>
+    <category term='filter'/>
+    <title>Entertainment - Kids</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='disney.com OR pbskids.org OR nickelodeon.com OR netflix.com OR youtube.com'/>
+    <apps:property name='hasTheWord' value='subject:(kids OR family OR cartoon OR movie OR show OR subscription)'/>
+    <apps:property name='label' value='Entertainment/Kids'/>
+  </entry>
+
+  <!-- TRAVEL: Family vacation planning and travel bookings -->
+  <entry>
+    <category term='filter'/>
+    <title>Travel - Family</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='booking.com OR expedia.com OR airbnb.com OR hotels.com OR airlines.com'/>
+    <apps:property name='hasTheWord' value='subject:(family OR vacation OR booking OR reservation OR &quot;travel itinerary&quot; OR flight OR hotel)'/>
+    <apps:property name='label' value='Travel/Family'/>
+  </entry>
+
+  <!-- FINANCE: Family banking, insurance, and financial planning -->
+  <entry>
+    <category term='filter'/>
+    <title>Finance - Family</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(insurance OR &quot;college savings&quot; OR &quot;529 plan&quot; OR mortgage OR &quot;life insurance&quot; OR &quot;family account&quot; OR allowance)'/>
+    <apps:property name='label' value='Finance/Family'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- FAMILY APPS: Communication and coordination apps for families -->
+  <entry>
+    <category term='filter'/>
+    <title>Apps - Family</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='cozi.com OR familywall.com OR google.com OR apple.com'/>
+    <apps:property name='hasTheWord' value='subject:(calendar OR &quot;family event&quot; OR reminder OR schedule OR &quot;shared list&quot;)'/>
+    <apps:property name='label' value='Apps/Family'/>
+  </entry>
+
+  <!-- COMMUNITY: Neighborhood, community events, and local activities -->
+  <entry>
+    <category term='filter'/>
+    <title>Community - Local</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(neighborhood OR community OR local OR &quot;town hall&quot; OR library OR park OR festival OR &quot;family event&quot;)'/>
+    <apps:property name='label' value='Community/Local'/>
+  </entry>
+
+  <!-- SAFETY: Emergency alerts and safety notifications (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Safety - Alerts</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(emergency OR alert OR &quot;severe weather&quot; OR &quot;school lockdown&quot; OR safety OR &quot;amber alert&quot; OR &quot;traffic alert&quot;)'/>
+    <apps:property name='label' value='Safety/Alerts'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PTA/PTO: Parent-teacher organizations and school volunteering -->
+  <entry>
+    <category term='filter'/>
+    <title>School - PTA</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(PTA OR PTO OR volunteer OR fundraiser OR &quot;school board&quot; OR &quot;parent meeting&quot; OR &quot;bake sale&quot;)'/>
+    <apps:property name='label' value='School/PTA'/>
+  </entry>
+
+  <!-- PARENTING: Parenting resources and educational content -->
+  <entry>
+    <category term='filter'/>
+    <title>Parenting - Resources</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='from' value='parents.com OR babycenter.com OR whattoexpect.com OR scholastic.com'/>
+    <apps:property name='hasTheWord' value='subject:(parenting OR &quot;child development&quot; OR &quot;family tips&quot; OR education OR learning)'/>
+    <apps:property name='label' value='Parenting/Resources'/>
+  </entry>
+
+  <!-- SECURITY: Family security and 2FA codes (starred & important) -->
+  <entry>
+    <category term='filter'/>
+    <title>Security</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='subject:(OTP OR &quot;verification code&quot; OR &quot;security code&quot; OR 2FA OR &quot;login code&quot; OR &quot;family safety&quot;)'/>
+    <apps:property name='label' value='Security'/>
+    <apps:property name='shouldStar' value='true'/>
+    <apps:property name='shouldAlwaysMarkImportant' value='true'/>
+  </entry>
+
+  <!-- PROMOTIONS: Family-related promotions and offers (auto-archived) -->
+  <entry>
+    <category term='filter'/>
+    <title>Promotions</title>
+    <updated>2025-09-10T00:00:00Z</updated>
+    <content/>
+    <apps:property name='hasTheWord' value='category:promotions OR subject:(sale OR discount OR &quot;kids sale&quot; OR &quot;family deal&quot; OR &quot;back to school&quot;)'/>
+    <apps:property name='label' value='Promotions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>

@@ -1,0 +1,60 @@
+name: 🐛 Bug Report
+description: Report a problem with existing filters
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! 🐛
+        
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: What's the problem?
+      description: A clear description of what the bug is
+      placeholder: Describe what happened...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect?
+      description: What should have happened instead?
+      placeholder: Describe what you expected...
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: filter-package
+    attributes:
+      label: Which filter package?
+      options:
+        - basic-user
+        - business-professional
+        - student
+        - youtuber-developer
+        - freelancer-entrepreneur
+        - parent-family
+        - senior-retiree
+        - ecommerce-seller
+        - Other/Multiple packages
+    validations:
+      required: true
+      
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Details
+      description: Gmail settings, browser, or any other relevant information
+      placeholder: Browser, Gmail language/region, etc.
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples here
+    validations:
+      required: false

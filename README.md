@@ -1,18 +1,19 @@
 <div align="center">
   <img src="assets/hero.svg" alt="Gmail Filters Collection banner">
 
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Gmail](https://img.shields.io/badge/Gmail-Compatible-red.svg)](https://gmail.com)
 [![XML Version](https://img.shields.io/badge/XML-1.0-blue.svg)]()
 [![Maintenance](https://img.shields.io/badge/Maintained-Yes-brightgreen.svg)]()
 [![Ready to Use](https://img.shields.io/badge/Status-Ready%20to%20Use-brightgreen.svg)]()
-[![4 Packages](https://img.shields.io/badge/Packages-4-blue.svg)]()
+[![8 Packages](https://img.shields.io/badge/Packages-8-blue.svg)]()
 [![Easy Setup](https://img.shields.io/badge/Setup-Easy-green.svg)]()
 
 **Ready-to-use Gmail filter packages that automatically organize your inbox**
 
 *Choose the package that fits your needs and get organized in minutes*
+
+<!-- ### 🌐 [**Visit Our Website**](https://pralhad-nasane.github.io/gmail-filters-collection/) | 📖 [**Complete Guide**](COMPLETE_GMAIL_FILTER_GUIDE.md) -->
 
 </div>
 
@@ -31,20 +32,32 @@ gmail-filters-collection/
     ├── student/
     │   ├── student_filters.xml
     │   └── README.md
-    └── youtuber-developer/
-        ├── youtuber_developer_filters.xml
+    ├── youtuber-developer/
+    │   ├── youtuber_developer_filters.xml
+    │   └── README.md
+    ├── freelancer-entrepreneur/
+    │   ├── freelancer_entrepreneur_filters.xml
+    │   └── README.md
+    ├── parent-family/
+    │   ├── parent_family_filters.xml
+    │   └── README.md
+    ├── senior-retiree/
+    │   ├── senior_retiree_filters.xml
+    │   └── README.md
+    └── ecommerce-seller/
+        ├── ecommerce_seller_filters.xml
         └── README.md
 ```
 
-## ✨ What You Get
+## Features
 
 | Feature | Benefit |
 |---------|---------|
-| 🤖 **Automatic email sorting** | No more manual organization |
-| ⭐ **Important emails marked** | Never miss what matters |
-| 🛡️ **Spam protection** | Financial emails stay safe |
-| 🧹 **Clean inbox** | Less clutter, more focus |
-| 📱 **Works everywhere** | Phone and computer ready |
+| **Automatic email sorting** | No more manual organization |
+| **Important emails marked** | Never miss what matters |
+| **Spam protection** | Financial emails stay safe |
+| **Clean inbox** | Less clutter, more focus |
+| **Cross-platform compatibility** | Works on phone and computer |
 
 ## 📦 Available Packages
 
@@ -52,82 +65,138 @@ gmail-filters-collection/
 <tr>
 <td width="50%">
 
-### [👤 Basic User](filters/basic-user/)
+### [Basic User](filters/basic-user/)
 **Perfect for:** Regular email users
 
 **What it organizes:**
-- 📱 Social media notifications
-- 🛒 Online shopping orders  
-- 📺 Streaming subscriptions
-- ✈️ Travel bookings
-- 💰 Money-related emails
+- Social media notifications
+- Online shopping orders  
+- Streaming subscriptions
+- Travel bookings
+- Financial emails
 
 </td>
 <td width="50%">
 
-### [💼 Business Professional](filters/business-professional/)
+### [Business Professional](filters/business-professional/)
 **Perfect for:** Business owners, employees, freelancers
 
 **What it organizes:**
-- 👥 Client emails (marked as important)
-- 📅 Meeting invitations
-- 💰 Money and invoices
-- 📊 Project updates
-- ⚖️ Legal documents
+- Client emails (marked as important)
+- Meeting invitations
+- Payments and invoices
+- Project updates
+- Legal documents
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### [🎓 Student](filters/student/)
+### [Student](filters/student/)
 **Perfect for:** College and university students
 
 **What it organizes:**
-- 🏫 School emails (.edu addresses)
-- 📚 Class assignments and grades
-- 💰 Financial aid information
-- 💼 Job applications
-- 🎉 Campus activities
+- School emails (.edu addresses)
+- Class assignments and grades
+- Financial aid information
+- Job applications
+- Campus activities
 
 </td>
 <td width="50%">
 
-### [💻 YouTuber & Developer](filters/youtuber-developer/)
+### [YouTuber & Developer](filters/youtuber-developer/)
 **Perfect for:** Content creators and programmers
 
 **What it organizes:**
-- 📺 YouTube notifications
-- 💻 GitHub and coding platforms
-- 🎨 Creative tools (Figma, Adobe)
-- 🤝 Business partnerships
-- 📰 Tech newsletters
+- YouTube notifications
+- GitHub and coding platforms
+- Creative tools (Figma, Adobe)
+- Business partnerships
+- Tech newsletters
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### [Freelancer & Entrepreneur](filters/freelancer-entrepreneur/)
+**Perfect for:** Freelancers, solopreneurs, independent contractors
+
+**What it organizes:**
+- Client leads and projects
+- Freelance platform notifications
+- Payment and invoicing systems
+- Networking and referrals
+- Skill development
+
+</td>
+<td width="50%">
+
+### [Parent & Family](filters/parent-family/)
+**Perfect for:** Parents managing family communications
+
+**What it organizes:**
+- School communications
+- Medical appointments
+- Children's activities
+- Family shopping
+- Emergency alerts
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### [Senior & Retiree](filters/senior-retiree/)
+**Perfect for:** Seniors and retirees
+
+**What it organizes:**
+- Medicare and healthcare
+- Social Security and pensions
+- Government communications
+- Family updates
+- Hobbies and community
+
+</td>
+<td width="50%">
+
+### [E-commerce & Online Seller](filters/ecommerce-seller/)
+**Perfect for:** Online sellers and e-commerce businesses
+
+**What it organizes:**
+- Customer support and reviews
+- Platform notifications (Amazon, eBay, Etsy)
+- Inventory and suppliers
+- Payment processing
+- Marketing and analytics
 
 </td>
 </tr>
 </table>
 
-## 🚀 How to Install
+## 🚀 Installation
 
-> **Quick Setup - Takes just 2 minutes!**
+**Quick Setup - Takes just 2 minutes**
 
-1. **📋 Pick your package** from the list above
-2. **📁 Go to that folder** and download the XML file  
-3. **⚙️ Open Gmail** → Settings → "Filters and Blocked Addresses"
-4. **📤 Click "Import filters"** → Choose your downloaded file
-5. **✅ Review and create** → Done!
+1. **Pick your package** from the list above
+2. **Go to that folder** and download the XML file  
+3. **Open Gmail** → Settings → "Filters and Blocked Addresses"
+4. **Click "Import filters"** → Choose your downloaded file
+5. **Review and create** → Done!
 
-## 🎯 Why Use These Filters?
+## Why Use These Filters?
 
-| 💪 **Benefit** | 📈 **Result** |
-|----------------|---------------|
-| ⏰ **Save time** | No more manual email sorting |
-| 📂 **Stay organized** | Everything has its place |
-| 🔔 **Never miss important emails** | Auto-marked for priority |
-| 😌 **Less stress** | Clean, organized inbox |
-| ⚡ **Easy setup** | Ready in just a few minutes |
+| **Benefit** | **Result** |
+|-------------|------------|
+| **Save time** | No more manual email sorting |
+| **Stay organized** | Everything has its place |
+| **Never miss important emails** | Auto-marked for priority |
+| **Less stress** | Clean, organized inbox |
+| **Easy setup** | Ready in just a few minutes |
 
-## 📋 Need Help?
+## Need Help?
 - Read the README in each package folder for detailed setup instructions
 - Open an issue if something doesn't work as expected
 
@@ -183,9 +252,24 @@ Want to add a new service or category? Here's the template:
 - `shouldArchive` - Skip inbox, go straight to label
 - `shouldNeverSpam` - Never mark as spam
 
+## Contributing & Suggestions
+
+We'd love to hear from you! If you have:
+
+- **Ideas for new filter packages** (e.g., specific professions, hobbies, or use cases)
+- **Improvements to existing filters** (missing services, better organization)
+- **Issues or bugs** you've encountered
+- **Documentation improvements** or clearer instructions
+
+**How to contribute:**
+- 🐛 **[Report a Bug](../../issues/new?assignees=&labels=bug&template=bug_report.yml)** - Found an issue with existing filters?
+- 💡 **[Suggest New Package](../../issues/new?assignees=&labels=enhancement%2Cnew-package&template=new_package.yml)** - Have an idea for a new demographic?
+- 🔧 **[Improve Filters](../../issues/new?assignees=&labels=enhancement%2Cimprovement&template=improvement.yml)** - Want to enhance existing packages?
+
+Your contributions help make Gmail organization better for everyone!
+
 ## License
 
 Free to use and modify. See [LICENSE](LICENSE) for details.
 
-
-**⭐ Star this repo if it helped organize your Gmail!**
+**⭐ Star this repository if it helped organize your Gmail!**
