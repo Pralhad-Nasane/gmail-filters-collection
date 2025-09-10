@@ -17,6 +17,20 @@
 
 </div>
 
+
+## 🌟 Overview
+
+Email overload is a common problem affecting productivity and mental wellbeing. This collection provides ready-to-use Gmail filters that help you:
+
+- ✅ Automatically categorize incoming emails
+- ✅ Identify and manage promotional content
+- ✅ Prioritize important communications
+- ✅ Reduce inbox clutter
+- ✅ Create a more efficient email workflow
+
+
+
+
 ## Repository Structure
 
 ```
