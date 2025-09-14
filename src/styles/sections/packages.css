@@ -1,0 +1,75 @@
+/* Packages Section Styles */
+#packages {
+    background: var(--background-gray);
+}
+
+/* Package section specific styling handled by cards.css for package-card components */
+/* Search and filter styling handled by forms.css */
+
+/* Additional packages section specific styles */
+#packages .section-title {
+    color: var(--text-primary);
+}
+
+#packages .section-subtitle {
+    color: var(--text-secondary);
+    max-width: 700px;
+}
+
+/* Hidden state for filtered packages */
+.package-card.hidden {
+    display: none;
+}
+
+/* Comparison Table */
+.comparison-section {
+    margin-top: 4rem;
+}
+
+.comparison-table {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--background-white);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.comparison-table td {
+    font-size: 0.8rem;
+}
+
+.comparison-table .package-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.comparison-table .feature-yes {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.comparison-table .feature-no {
+    color: var(--text-muted);
+}
+
+

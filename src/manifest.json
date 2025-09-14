@@ -1,0 +1,9 @@
+{
+    "name": "Gmail Filters Collection",
+    "short_name": "Gmail Filters",
+    "description": "Ready-to-use Gmail filter packages that automatically organize your inbox",
+    "start_url": "/gmail-filters-collection/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2563eb"
+}

@@ -1,0 +1,18 @@
+/* Features Section Styles */
+#features {
+    background: var(--background-white);
+}
+
+/* Features section specific styling handled by cards.css for feature-card components */
+
+/* Additional features section specific styles if needed */
+#features .section-title {
+    color: var(--text-primary);
+}
+
+#features .section-subtitle {
+    color: var(--text-secondary);
+    max-width: 700px;
+}
+
+

@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/hero.svg" alt="Gmail Filters Collection banner">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Gmail](https://img.shields.io/badge/Gmail-Compatible-red.svg)](https://gmail.com)
 [![XML Version](https://img.shields.io/badge/XML-1.0-blue.svg)]()
 [![Maintenance](https://img.shields.io/badge/Maintained-Yes-brightgreen.svg)]()
@@ -13,7 +13,7 @@
 
 *Choose the package that fits your needs and get organized in minutes*
 
-<!-- ### 🌐 [**Visit Our Website**](https://pralhad-nasane.github.io/gmail-filters-collection/) | 📖 [**Complete Guide**](COMPLETE_GMAIL_FILTER_GUIDE.md) -->
+### 🌐 [**Visit Our Website**](https://pralhad-nasane.github.io/gmail-filters-collection/)
 
 </div>
 
