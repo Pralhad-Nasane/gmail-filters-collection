@@ -31,7 +31,7 @@ const packageData = [
             'Spam protection',
             'Important email priority'
         ],
-        downloadUrl: '../filters/basic-user/basic_user_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/basic-user/basic_user_filters.xml',
         setupGuide: {
             title: 'Basic User Setup Guide',
             steps: [
@@ -73,7 +73,7 @@ const packageData = [
             'Invoice and payment tracking',
             'Professional network management'
         ],
-        downloadUrl: '../filters/business-professional/business_professional_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/business-professional/business_professional_filters.xml',
         setupGuide: {
             title: 'Business Professional Setup Guide',
             steps: [
@@ -115,7 +115,7 @@ const packageData = [
             'Customer inquiry organization',
             'Platform-specific filtering'
         ],
-        downloadUrl: '../filters/ecommerce-seller/ecommerce_seller_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/ecommerce-seller/ecommerce_seller_filters.xml',
         setupGuide: {
             title: 'E-commerce Seller Setup Guide',
             steps: [
@@ -157,7 +157,7 @@ const packageData = [
             'Invoice and contract management',
             'Networking and opportunity alerts'
         ],
-        downloadUrl: '../filters/freelancer-entrepreneur/freelancer_entrepreneur_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/freelancer-entrepreneur/freelancer_entrepreneur_filters.xml',
         setupGuide: {
             title: 'Freelancer & Entrepreneur Setup Guide',
             steps: [
@@ -199,7 +199,7 @@ const packageData = [
             'Health and medical organization',
             'Household service management'
         ],
-        downloadUrl: '../filters/parent-family/parent_family_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/parent-family/parent_family_filters.xml',
         setupGuide: {
             title: 'Parent & Family Setup Guide',
             steps: [
@@ -241,7 +241,7 @@ const packageData = [
             'Family communication emphasis',
             'Simplified organization'
         ],
-        downloadUrl: '../filters/senior-retiree/senior_retiree_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/senior-retiree/senior_retiree_filters.xml',
         setupGuide: {
             title: 'Senior & Retiree Setup Guide',
             steps: [
@@ -283,7 +283,7 @@ const packageData = [
             'Campus activity notifications',
             'Financial aid and billing'
         ],
-        downloadUrl: '../filters/student/student_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/student/student_filters.xml',
         setupGuide: {
             title: 'Student Setup Guide',
             steps: [
@@ -325,7 +325,7 @@ const packageData = [
             'Monetization and analytics alerts',
             'Technical communication organization'
         ],
-        downloadUrl: '../filters/youtuber-developer/youtuber_developer_filters.xml',
+        downloadUrl: 'https://raw.githubusercontent.com/Pralhad-Nasane/gmail-filters-collection/main/filters/youtuber-developer/youtuber_developer_filters.xml',
         setupGuide: {
             title: 'YouTuber & Developer Setup Guide',
             steps: [
