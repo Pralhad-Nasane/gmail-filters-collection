@@ -115,6 +115,16 @@
     animation: checkmarkAppear 0.4s ease-out;
 }
 
+/* Error state for download button */
+.download-btn.error {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white !important;
+}
+
+.download-btn.error .download-icon {
+    animation: errorShake 0.6s ease-out;
+}
+
 /* Button Animations */
 @keyframes downloadPulse {
 
@@ -171,6 +181,29 @@
     }
 }
 
+@keyframes errorShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-2px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(2px);
+    }
+}
+
 /* Theme-specific button styles */
 
 /* Responsive Button Design */
@@ -188,4 +221,3 @@
         max-width: 250px;
     }
 }
-

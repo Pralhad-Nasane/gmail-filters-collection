@@ -63,7 +63,7 @@ class AnimationManager {
         }
     }
 
-    handleDownload(packageId, buttonElement) {
+    async handleDownload(packageId, buttonElement) {
         const pkg = window.getPackageById(packageId);
         if (!pkg || !buttonElement) return;
 
@@ -79,15 +79,28 @@ class AnimationManager {
             Downloading...
         `;
 
-        // Simulate download process
-        setTimeout(() => {
-            // Create and trigger download
+        try {
+            // Fetch the file content from GitHub
+            const response = await fetch(pkg.downloadUrl);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const fileContent = await response.text();
+
+            // Create blob and download
+            const blob = new Blob([fileContent], { type: 'application/xml' });
+            const url = window.URL.createObjectURL(blob);
+
             const link = document.createElement('a');
-            link.href = pkg.downloadUrl;
+            link.href = url;
             link.download = `${pkg.id}_filters.xml`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+
+            // Clean up the blob URL
+            window.URL.revokeObjectURL(url);
 
             // Show completion state
             buttonElement.classList.remove('downloading');
@@ -99,14 +112,38 @@ class AnimationManager {
                 Downloaded!
             `;
 
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                buttonElement.classList.remove('completed');
-                buttonElement.disabled = false;
-                buttonElement.innerHTML = originalText;
-            }, 3000);
+            // Show success toast if available
+            if (window.app && window.app.modules.toast) {
+                window.app.modules.toast.update(`✅ ${pkg.title} filters downloaded successfully!`, 3000);
+            }
 
-        }, 1500); // 1.5 second download simulation
+        } catch (error) {
+            console.error('Download failed:', error);
+
+            // Show error state
+            buttonElement.classList.remove('downloading');
+            buttonElement.classList.add('error');
+            buttonElement.innerHTML = `
+                <svg class="download-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+                Error
+            `;
+
+            // Show error toast if available
+            if (window.app && window.app.modules.toast) {
+                window.app.modules.toast.update(`❌ Download failed. Please try again.`, 5000);
+            }
+        }
+
+        // Reset button after 3 seconds
+        setTimeout(() => {
+            buttonElement.classList.remove('completed', 'error');
+            buttonElement.disabled = false;
+            buttonElement.innerHTML = originalText;
+        }, 3000);
     }
 
     // Smooth reveal animation for sections
