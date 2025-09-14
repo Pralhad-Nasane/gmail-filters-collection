@@ -200,6 +200,17 @@ gmail-filters-collection/
 4. **Click "Import filters"** → Choose your downloaded file
 5. **Review and create** → Done!
 
+> **⚠️ Important Notice**
+> 
+> **Please review the XML filters before importing them into your Gmail account!** 
+> 
+> - Open and examine the downloaded XML file to understand what filters will be created
+> - Check that the email addresses and keywords match your needs
+> - Consider testing with a few filters first before importing the entire package
+> - You can always modify or delete filters later in Gmail settings if needed
+> 
+> These filters will automatically organize your emails based on predefined rules. While they're designed to be helpful, **it's always good practice to understand what they do before applying them to your inbox.**
+
 ## Why Use These Filters?
 
 | **Benefit** | **Result** |
